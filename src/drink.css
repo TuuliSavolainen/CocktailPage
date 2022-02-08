@@ -1,0 +1,25 @@
+.drinkButton {
+    border: none;
+    background-color: #C0D8C0;
+    padding: 20px auto;
+}
+
+.drinkCard {
+    background-color: #C0D8C0;
+}
+
+.overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: show; /* Hidden by default */
+    align-items: center;
+    width: 60%; /* Full width (cover the whole page) */
+    height: 60%; /* Full height (cover the whole page) */
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.753); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
