@@ -7,9 +7,26 @@ import DrinkOverlay from "../components/DrinkOverlay";
 
 const Checkboxes = ({removeIngridient, addIngridient, ingridients}) => {
 
-  const [checkedState, setCheckedState] = useState(
-    new Array(ingridients.length).fill(false)
+  //const [checkedState, setCheckedState] = useState(
+  //  new Array(ingridients.length).fill(false)
+  //);
+
+  const [checkedState, setCheckedState] = useState([])
+  let sublist = []
+
+  for (const key in ingridients){
+    const lst = new Array(ingridients[key].length).fill(false)
+    sublist = sublist.concat(lst)
+  }
+  setCheckedState(sublist)
+
+  /*const [checkedState, setCheckedState] = useState(
+    new Array(ingridients.length).fill(0).map(ingridientType => {
+      console.log(ingridients, ingridientType)
+      return(new Array(3).fill(false))})
   );
+  console.log('tsekkaa setit', checkedState)
+  */
 
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
@@ -24,11 +41,7 @@ const Checkboxes = ({removeIngridient, addIngridient, ingridients}) => {
     }
   }
 
-  return (
-    <div>
-      <h3>Select Toppings</h3>
-      <ul className='check-box'>
-        {ingridients.map((item, index) => {
+  /*        {ingridients.map((item, index) => {
           return (
             <li key={index} className='check-item'>
 
@@ -44,7 +57,19 @@ const Checkboxes = ({removeIngridient, addIngridient, ingridients}) => {
       
             </li>
           );
-        })}
+        })} */
+
+  const createCheckboxes = () => {
+    
+  }
+
+  return (
+    <div>
+      <h3>Select Toppings</h3>
+      <ul className='check-box'>
+
+
+
 
       </ul>
     </div>

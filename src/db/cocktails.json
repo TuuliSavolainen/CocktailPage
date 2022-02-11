@@ -28,6 +28,7 @@
 ],
 
 "ingridients": {
-  "liquor": ["vodka", "tequila", "something"]
+  "liquor": ["vodka", "tequila", "something"],
+  "herbs": ["basil"]
 }
 }
