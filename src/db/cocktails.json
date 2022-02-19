@@ -28,7 +28,30 @@
 ],
 
 "ingridients": {
-  "liquor": ["vodka", "tequila", "something"],
-  "herbs": ["basil"]
+  "liquor": [
+    {
+    "name": "vodka", 
+    "index": 1
+    },
+    {
+      "name": "scotch", 
+      "index": 2
+    },
+    {
+      "name": "tequila", 
+        "index": 3
+    }
+  ],
+
+  "herbs": [
+    {
+      "name": "basil", 
+      "index": 4
+      },
+    {
+      "name": "lemon", 
+      "index": 5
+    }
+  ]
 }
 }

@@ -12,9 +12,6 @@ export default function App() {
   const cocktails = database.cocktails
   const ingridients = database.ingridients
   console.log(ingridients)
- 
-
-
 
   return (
     <BrowserRouter>
