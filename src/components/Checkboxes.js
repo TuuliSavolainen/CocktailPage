@@ -23,11 +23,10 @@ const HandleSubList = ({subtype, selectedIngridients, changeSelectedIngridient})
         for (const n in subtype){
             if (subtype[n].name === item){
                 const index = subtype[n].index
-                changeSelectedIngridient(index)
+                changeSelectedIngridient(index, item)
             }
         }
     }
-    console.log(selectedIngridients)
 
     return(
         <div className='chechkbox-group'>
@@ -53,7 +52,6 @@ const HandleSubList = ({subtype, selectedIngridients, changeSelectedIngridient})
         </div>
     )
 }
-
 
 
 const Checkboxes = ({ingridients, selectedIngridients, changeSelectedIngridient}) => {

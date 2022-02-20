@@ -1,9 +1,4 @@
-@media only screen and (max-width: 1024px) {
-    .menu{
-        background-color: var(--background-color);
 
-        
-    }
     
     .menu-items{
 
@@ -25,4 +20,12 @@
         color: var(--link-color);
     }
     
+
+
+@media only screen and (max-width: 1024px) {
+    .menu{
+        background-color: var(--background-color);
+
+        
+    }
 }

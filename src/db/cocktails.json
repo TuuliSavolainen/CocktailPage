@@ -5,7 +5,7 @@
     "name": "Margarita",
     "type": "coctail",
     "gatecory": "sweet",
-    "ingridients": "tequila, triple sec, lemon",
+    "ingridients": ["tequila", "triple sec", "lemon"],
     "portions": "1, 2",
     "instructons": "mix well"
   },
@@ -13,7 +13,7 @@
     "name": "Margarita",
     "type": "coctail",
     "gatecory": "sweet",
-    "ingridients": "tequila, triple sec, lemon",
+    "ingridients": ["tequila", "triple sec", "lemon"],
     "portions": "1, 2",
     "instructons": "mix well"
   },
@@ -21,7 +21,7 @@
     "name": "Margarita",
     "type": "coctail",
     "gatecory": "sweet",
-    "ingridients": "tequila, triple sec, lemon",
+    "ingridients": ["tequila", "triple sec", "lemon"],
     "portions": "1, 2",
     "instructons": "mix well"
 }
@@ -39,6 +39,10 @@
     },
     {
       "name": "tequila", 
+        "index": 3
+    },
+    {
+      "name": "triple sec", 
         "index": 3
     }
   ],
