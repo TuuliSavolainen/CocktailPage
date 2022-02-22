@@ -6,33 +6,41 @@
     "type": "cocktail",
     "gatecory": "sweet",
     "ingridients": ["tequila", "triple sec", "lemon"],
-    "portions": "1, 2",
+    "portions": ["1", "2", "1/2"],
     "instructons": "mix well"
   },
+  {
+    "name": "Gin & Tonic",
+    "type": "cocktail",
+    "gatecory": "sweet",
+    "ingridients": ["gin", "tonic"],
+    "portions": ["1", "2"],
+    "instructons": "mix well"
+  },  
   {
     "name": "Margarita",
     "type": "cocktail",
     "gatecory": "sweet",
     "ingridients": ["tequila", "triple sec", "lemon"],
-    "portions": "1, 2",
+    "portions": ["1", "2", "1/2"],
     "instructons": "mix well"
   },
   {
-    "name": "Margarita",
+    "name": "Gin & Tonic",
     "type": "cocktail",
     "gatecory": "sweet",
-    "ingridients": ["tequila", "triple sec", "lemon"],
-    "portions": "1, 2",
+    "ingridients": ["gin", "tonic"],
+    "portions": ["1", "2"],
     "instructons": "mix well"
-},
-{
-  "name": "Gin & Tonic",
-  "type": "cocktail",
-  "gatecory": "sweet",
-  "ingridients": ["gin", "tonic"],
-  "portions": "1, 2",
-  "instructons": "mix well"
-}
+  },
+  {
+    "name": "Gin & Tonic",
+    "type": "cocktail",
+    "gatecory": "sweet",
+    "ingridients": ["gin", "tonic"],
+    "portions": ["1", "2"],
+    "instructons": "mix well"
+  }
 ],
 
 "ingridients": {

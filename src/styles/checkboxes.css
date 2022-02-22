@@ -6,26 +6,23 @@
     margin: 20px;
 }
 
-
-
-.checkbox-group{
-    display: grid;
-    list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-}
-
 .checkboxes-type{
-    background-color: aqua;
     padding: 10px;
 }
 
 .type-header{
     padding: 5px;
-    text-align: center;
-    background-color: blueviolet;
+    margin: 15px;
 }
 
 .check-item{
-    background-color: blue;
+    padding: 2px;
+
+}
+
+@media (max-width: 640px) {
+    .checkboxes{
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
 }

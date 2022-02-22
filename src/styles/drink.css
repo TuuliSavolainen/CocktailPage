@@ -4,11 +4,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: left;
-
     padding: 5px auto;
     column-gap: 15px;
     row-gap: 20px;
-
 }
 
 .drink-card{
@@ -19,8 +17,6 @@
     margin: 20px auto;
     cursor: pointer;
 }
-
-
 
 .drink-card .drink-image{
     position: absolute;
@@ -46,20 +42,19 @@
     font-size: 24px;
     bottom: 15px;
     left: 10px;
-
 }
 
 
 
 .overlay{
     position: fixed;
-    height: 40%;
-    width: 60%;
+    height: 60%;
+    width: 76%;
 
-    top: 30%;
-    left: 20%;
-    margin-top: -30px;
-    margin-left: -20px;
+    top: 20%;
+    left: 12%;
+    margin-top: -20px;
+    margin-left: -12px;
     overflow: scroll;
 
 
@@ -86,10 +81,7 @@
     height: 3px;
     
 }
-.close-button:hover{
-    cursor: pointer;
-    background-color: var(--high1);
-}
+
 .close-button:nth-child(1){
     transform: rotate(45deg) translate(11px, 6px);
 }
@@ -101,17 +93,19 @@
 .overlay-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
+
 }
 
 .overlay-image{
-    position: relative;
+    object-fit: cover;
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    height: 100%;
+}
 
-    
-
+.overlay-texts{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: white;
 }
 
 

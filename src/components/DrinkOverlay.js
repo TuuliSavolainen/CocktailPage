@@ -2,6 +2,7 @@ import react from "react";
 
 const DrinkOverlay = ({cocktail, closeOverlay}) => {
 
+
         return(
           <div className='overlay'>
             <button className="overlay-button" onClick={(e)=>closeOverlay(e)}>
@@ -12,7 +13,6 @@ const DrinkOverlay = ({cocktail, closeOverlay}) => {
               <img className='overlay-image' src={require(`/src/img/cocktails/${cocktail.name}.jpg`)} alt={cocktail.name}></img>
               <div className="overlay-texts">
                 <h3>{cocktail.name}</h3>
-                <span>{cocktail.instructons}</span>
               </div>
             </div>
 

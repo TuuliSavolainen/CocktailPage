@@ -73,7 +73,7 @@ const Checkboxes = ({ingridients, selectedIngridients, changeSelectedIngridient}
 
     return (
       <div>
-        <h3>Select Toppings</h3>
+        <h3>Select ingridients you want to use</h3>
         <div className = "checkboxes">
             {createLists()}
         </div>
