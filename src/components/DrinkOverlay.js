@@ -1,11 +1,21 @@
 import react from "react";
 
-const DrinkOverlay = ({drink}) => {
+const DrinkOverlay = ({cocktail, closeOverlay}) => {
 
-    console.log('hmmm')
         return(
           <div className='overlay'>
-            {drink.instructons}
+            <button className="overlay-button" onClick={(e)=>closeOverlay(e)}>
+              <div className="close-button"></div>
+              <div className="close-button"></div>
+            </button>
+            <div className="overlay-grid">
+              <img className='overlay-image' src={require(`/src/img/cocktails/${cocktail.name}.jpg`)} alt={cocktail.name}></img>
+              <div className="overlay-texts">
+                <h3>{cocktail.name}</h3>
+                <span>{cocktail.instructons}</span>
+              </div>
+            </div>
+
           </div>
         )
           

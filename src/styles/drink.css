@@ -12,19 +12,22 @@
 }
 
 .drink-card{
+    border: solid black 2px;
     position: relative;
     height: 200px;
     width: 330px;
     margin: 20px auto;
-    background-color: aqua;
+    cursor: pointer;
 }
+
+
 
 .drink-card .drink-image{
     position: absolute;
     width:330px;
     height:200px;
-
 }
+
 .drink-card .drink-gradient{
     position: absolute;
     height: 200px;
@@ -37,25 +40,73 @@
 }
 
 .drink-card .drink-text{
+    position: absolute;
     color: white;
+    z-index: 2;
+    font-size: 24px;
+    bottom: 15px;
+    left: 10px;
+
+}
+
+
+
+.overlay{
+    position: fixed;
+    top: 20px;
+    height: 30%;
+    width: 80%;
+    align-items: center;
     z-index: 3;
-    font-size: 16px;
-
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
 }
 
-
-.drinkButton {
+.overlay-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
-    background-color: #C0D8C0;
-    padding: 20px auto;
+
 }
 
-.drinkCard {
-    background-color: #C0D8C0;
+.close-button{
+    background-color: rgba(247, 247, 247, 0.993);
+    width: 30px;
+    height: 3px;
+    
+}
+.close-button:hover{
+    cursor: pointer;
+}
+.close-button:nth-child(1){
+    transform: rotate(45deg) translate(11px, 6px);
+}
+.close-button:nth-child(2){
+    transform: rotate(-45deg) translate(3px, 1px);
 }
 
-.overlay {
-    position: absolute; /* Sit on top of the page content */
+
+.overlay-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.overlay-image{
+    position: relative;
+    width: 100%;
+
+}
+
+
+.overlays {
+    position: -webkit-sticky; /* Sit on top of the page content */
+    top: 20px;
+    left: 20px;
     display: show; /* Hidden by default */
     align-items: center;
     width: 60%; /* Full width (cover the whole page) */
@@ -70,8 +121,26 @@
     display: flex;
   }
 
+@media (min-width: 1007px) {
+    .drink-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
-@media (max-width: 768px) {
+
+@media (max-width: 1300px) {
+    .drink-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .drink-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
     .drink-grid{
         grid-template-columns: 1fr;
     }

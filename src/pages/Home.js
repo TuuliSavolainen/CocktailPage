@@ -35,11 +35,24 @@ const Home = ({cocktails, ingridients}) => {
     }
   }
 
+  const [overlayShown, setOverlayShown] = useState(false)
+
+  const changeOverlay = (e,cocktail) => {
+    e.preventDefault()
+    setOverlayShown(cocktail) 
+  }
+
+  const closeOverlay = (e) => {
+    e.preventDefault()
+    setOverlayShown(false)
+  }
+
+  console.log(overlayShown) 
   return(
     <div>
       <Checkboxes ingridients={ingridients} selectedIngridients={selectedIngridients} changeSelectedIngridient = {changeSelectedIngridient}/>
-      <DrinksWithSelectedIng cocktails = {cocktails} selectedIngridientsByName = {selectedIngridientsByName}/>
-      
+      <DrinksWithSelectedIng cocktails = {cocktails} selectedIngridientsByName = {selectedIngridientsByName} changeOverlay={changeOverlay}/>
+      {overlayShown !== false && <DrinkOverlay cocktail={overlayShown} closeOverlay={closeOverlay}/>}
     </div>
   
   )

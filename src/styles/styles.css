@@ -15,12 +15,6 @@ ul, li, h1, h2, h3, p, link {
     
 }
 
-.first-view{
-    height: 100px;
-    width: 100%;
-    text-align: right;
-}
-
 
 
 .base {
@@ -35,69 +29,13 @@ ul, li, h1, h2, h3, p, link {
 
 }
 
-.checkboxes{
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-    margin-left: 20px;
+@media (max-width: 640px) {
+    .base{
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+        
+    }
 }
 
-.type-header{
-    font-size: 26px;
-    padding-bottom: 5px;
-}
-
-.checkbox-group{
-    display: grid;
-    list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    text-align: left;
-
-}
-
-
-.menu{
-    background-color: var(--background-color);
-    margin-top: -18px;
-    margin-left: -8px;
-    margin-right: -6px;
-    padding-bottom: -10px;
-    border-bottom: black solid 3px;
-    z-index: 2;
-}
-
-.menu-items{
-    display: flex;
-    justify-content: space-evenly;
-    
-    padding-top: 30px;
-
-}
-
-.menu-item{
-    text-decoration: none;
-    
-
-}
-
-.menu-link{
-    font-size: 22px;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    color: var(--link-color);
-}
-
-
-.image{
-   
-    background-attachment: fixed;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-    z-index: -1;
-}

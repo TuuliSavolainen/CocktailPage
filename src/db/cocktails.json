@@ -3,7 +3,7 @@
 "cocktails" :[
   {
     "name": "Margarita",
-    "type": "coctail",
+    "type": "cocktail",
     "gatecory": "sweet",
     "ingridients": ["tequila", "triple sec", "lemon"],
     "portions": "1, 2",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Margarita",
-    "type": "coctail",
+    "type": "cocktail",
     "gatecory": "sweet",
     "ingridients": ["tequila", "triple sec", "lemon"],
     "portions": "1, 2",
@@ -19,11 +19,19 @@
   },
   {
     "name": "Margarita",
-    "type": "coctail",
+    "type": "cocktail",
     "gatecory": "sweet",
     "ingridients": ["tequila", "triple sec", "lemon"],
     "portions": "1, 2",
     "instructons": "mix well"
+},
+{
+  "name": "Gin & Tonic",
+  "type": "cocktail",
+  "gatecory": "sweet",
+  "ingridients": ["gin", "tonic"],
+  "portions": "1, 2",
+  "instructons": "mix well"
 }
 ],
 
@@ -43,7 +51,11 @@
     },
     {
       "name": "triple sec", 
-        "index": 3
+        "index": 6
+    },
+    {
+      "name": "gin",
+      "index": 7
     }
   ],
 
@@ -56,6 +68,14 @@
       "name": "lemon", 
       "index": 5
     }
+  ],
+
+  "others": [
+    {
+      "name": "tonic", 
+      "index": 8
+      }
+
   ]
 }
 }

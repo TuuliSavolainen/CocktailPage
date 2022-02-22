@@ -1,0 +1,31 @@
+.checkboxes{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin: 20px;
+}
+
+
+
+.checkbox-group{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.checkboxes-type{
+    background-color: aqua;
+    padding: 10px;
+}
+
+.type-header{
+    padding: 5px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.check-item{
+    background-color: blue;
+}

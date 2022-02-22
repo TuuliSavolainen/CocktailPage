@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import database from './db/cocktails.json'
 import react, { useState } from "react";
+import '../src/styles/menu.css'
+import '../src/styles/checkboxes.css'
 
 export default function App() {
 

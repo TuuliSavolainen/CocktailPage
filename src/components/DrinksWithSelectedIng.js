@@ -1,6 +1,10 @@
 import '../styles/drink.css'
+import { useState } from 'react'
+import DrinkOverlay from './DrinkOverlay'
 
-const ShowDrinks = ({cocktails}) => {
+
+const ShowDrinks = ({cocktails, changeOverlay}) => {
+
 
     let drinkNames = []
 
@@ -8,28 +12,42 @@ const ShowDrinks = ({cocktails}) => {
         drinkNames = drinkNames.concat(cocktails[object].name)
     }
 
-    return(
-        <div className = 'drink-grid'>
-            {drinkNames.map((item, index) => {
-                return(
-                
-                <div key ={index} className="drink-card">
-                    <img className='drink-image' src={require(`/src/img/cocktails/${item}.jpg`)} alt={item}/>
-                    <span className='drink-gradient'>
-                    </span>
-                    <span className='drink-text'>
-                        {item}
-                    </span>
-                    
+    const findObejct = (name) => {
+        for (let object in cocktails){
+            if (cocktails[object].name === name){
+                return cocktails[object]
+            }
+        }
+    }
 
-                </div>
-                
-                )}) }
-                
+
+
+    return(
+        <div>
+            <div className = 'drink-grid'>
+                {drinkNames.map((item, index) => {
+                    const cocktail = findObejct(item)
+                    return(
+            
+                    <div key ={index} className="drink-card test" onClick={(e) => changeOverlay(e,cocktail) }>
+                        
+                        <img className='drink-image' src={require(`/src/img/cocktails/${item}.jpg`)} alt={item}/>
+                        <span className='drink-gradient'>
+                        </span>
+                        <span className='drink-text'>
+                            {item}
+                        </span>
+                        
+                    </div>
+                    
+                    )}) }
+            </div>
         </div>
     )
 }
-const DrinksWithSelectedIng = ({cocktails, ingridients, selectedIngridientsByName}) => {
+
+
+const DrinksWithSelectedIng = ({cocktails, ingridients, selectedIngridientsByName, changeOverlay}) => {
     let rightDrinks = []
 
     for (let i=0; i<cocktails.length;i++) {
@@ -41,7 +59,7 @@ const DrinksWithSelectedIng = ({cocktails, ingridients, selectedIngridientsByNam
 
     return(
         <div>{
-            rightDrinks.length > 0 ? <ShowDrinks cocktails = {rightDrinks}/> : <div>No drinks founded, please selecet more ingridients</div>}
+            rightDrinks.length > 0 ? <ShowDrinks cocktails = {rightDrinks}  changeOverlay={changeOverlay}/> : <span className='selection-text'>No drinks founded, please selecet more ingridients</span>}
             
         </div>
     )
